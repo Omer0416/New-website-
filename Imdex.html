@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Background Website</title>
+    <style>
+        /* Makes the video cover the whole screen */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        /* Styles for your sign-in form */
+        .signin-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            width: 300px;
+            margin: 100px auto;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="bg-video" autoplay muted loop>
+        <source src="YOUR_VIDEO_URL" type="video/mp4">
+    </video>
+
+    <!-- Sign-In Form (Example) -->
+    <div class="signin-box">
+        <h1>Welcome Back</h1>
+        <input type="text" placeholder="Username"><br>
+        <input type="password" placeholder="Password"><br>
+        <button>Sign In</button>
+    </div>
+</body>
+</html>
